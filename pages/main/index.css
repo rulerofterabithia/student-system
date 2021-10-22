@@ -1,0 +1,254 @@
+@import url(../../assets/styles/reset.css);
+@import url(../../assets/font/iconfont.css);
+
+.title {
+  height: 64px;
+  padding: 0 50px;
+  background-color: #001529;
+  line-height: 64px;
+}
+
+.title .logo {
+  height: 40px;
+  padding: 12px 0;
+  float: left;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.t-user {
+  float: right;
+  color: #fff;
+}
+
+.content {
+  position: fixed;
+  left: 0;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  background-color: #f0f2f5;
+}
+
+.content .left-nav {
+  position: fixed;
+  left: 0;
+  top: 64px;
+  bottom: 0;
+  width: 200px;
+  background-color: #001529;
+}
+
+.content .left-nav > li {
+  width: 175px;
+  height: 60px;
+  padding-left: 25px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.left-nav li:hover {
+  color: #eee;
+}
+
+.left-nav > .active {
+  background-color: #1890ff;
+}
+
+.right-content {
+  position: fixed;
+  top: 100px;
+  bottom: 0px;
+  left: 220px;
+  right: 0;
+  background-color: #fff;
+  overflow-y: auto;
+}
+.right-content > div {
+  display: none;
+}
+
+.right-content .active-content {
+  display: block;
+}
+
+/* 添加学生部分 */
+.add-stu {
+  margin-top: 70px;
+  margin-left: 100px;
+}
+.item {
+  margin-bottom: 20px;
+}
+
+.item label {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  text-align: right;
+  float: left;
+  /* color: #000; */
+}
+
+.item input[type="text"] {
+  width: 350px;
+  height: 20px;
+  padding: 10px 10px;
+  outline: none;
+  border: solid 1px #e7e7e7;
+  float: left;
+}
+
+.item select {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  float: left;
+  cursor: pointer;
+}
+
+.add-stu .btns * {
+  margin-left: 63px;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+}
+
+.btns .add-btn {
+  background-color: #409eff;
+}
+
+.btns .reset-btn {
+  background-color: #f56c6c;
+  outline: none;
+  border: none;
+}
+
+.stu-list .stu-table {
+  width: 100%;
+  text-align: center;
+}
+
+.stu-table th,
+.stu-table td {
+  padding: 15px;
+}
+td > span {
+  color: #409eff;
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background-color: #e6f7ff;
+}
+
+/* 编辑框 */
+.dialog {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+
+.edit-form {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  padding: 50px;
+  margin-top: -300px;
+  margin-left: -300px;
+  background-color: #fff;
+}
+.item {
+  margin-bottom: 20px;
+}
+
+.item label {
+  height: 40px;
+  line-height: 40px;
+  margin-right: 15px;
+  text-align: right;
+  float: left;
+  /* color: #000; */
+}
+
+.item input[type="text"] {
+  width: 350px;
+  height: 20px;
+  padding: 10px 10px;
+  outline: none;
+  border: solid 1px #e7e7e7;
+  float: left;
+}
+
+.item select {
+  width: 50px;
+  height: 40px;
+  outline: none;
+  float: left;
+  cursor: pointer;
+}
+
+.edit-form .btns * {
+  margin-left: 63px;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+}
+
+.btns .edit-btn {
+  background-color: #409eff;
+  margin-left: 150px;
+}
+
+/* 翻页功能 */
+.turn-page {
+  float: right;
+  margin-top: 20px;
+  user-select: none;
+}
+.turn-page > * {
+  float: left;
+}
+.turn-page .page > li {
+  float: left;
+}
+.page-btn, .turn-page .page > li{
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  color: #001529;
+  border: solid 1px #d9d9d9;
+  margin-right: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.turn-page .page .active {
+  color: #1890ff;
+  border-color: #1890ff;
+}
+.turn-page .page > li:hover,
+.page-btn:hover{
+  color: #1890ff;
+  border-color: #1890ff;
+}

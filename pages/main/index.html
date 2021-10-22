@@ -1,0 +1,152 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>后台页面</title>
+</head>
+
+<body>
+    <div class="title clear-float">
+        <div class="logo">
+            <img src="../../assets/logo.png" alt="">
+        </div>
+        <div class="t-user" id="t-user">小叶子</div>
+    </div>
+    <div class="content">
+        <ul class="left-nav" id="left-nav">
+            <li goal="stu-list" class="active">学生列表</li>
+            <li goal="add-stu">新增学生</li>
+            <li goal="find-stu">查找学生</li>
+        </ul>
+        <div class="right-content clear-float" id="right-content">
+            <div class="stu-list active-content">
+                <!-- 学生列表 -->
+                <table class="stu-table" cellspacing= "0">
+                    <thead>
+                        <tr>
+                            <th>学号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>电话</th>
+                            <th>邮箱</th>
+                            <th>地址</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-body">
+                        <!-- <tr>
+                            <td>1915925234</td>
+                            <td>项羽</td>
+                            <td>男</td>
+                            <td>19  </td>
+                            <td>11111111119</td>
+                            <td>xiangyu@qq.com</td>
+                            <td>楚国</td>
+                            <td>
+                                <span>编辑</span>
+                                <span>删除</span>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <!-- 遮罩层 -->
+                <div class="dialog" id="dialog">
+                    <form class="edit-form" id="edit-form">
+                        <div class="item clear-float">
+                            <label for="name">姓名：</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="item clear-float">
+                            <label for="sNo">学号：</label>
+                            <input type="text" id="sNo" readonly>
+                        </div>
+                        <div class="item clear-float">
+                            <label for="birth">生日：</label>
+                            <input type="text" id="birth">
+                        </div>
+                        <div class="item clear-float">
+                            <label for="sex">性别：</label>
+                            <select id="sex">
+                                <option value="0">男</option>
+                                <option value="1">女</option>
+                            </select>
+                        </div>
+                        <div class="item clear-float">
+                            <label for="phone">电话：</label>
+                            <input type="text" id="phone">
+                        </div>
+                        <div class="item clear-float">
+                            <label for="address">地址：</label>
+                            <input type="text" id="address">
+                        </div>
+                        <div class="item clear-float">
+                            <label for="email">邮箱：</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="btns clear-float">
+                            <div class="edit-btn" id="edit-btn">修改</div>
+                        </div>
+                    </form>
+                </div>
+                <!-- 翻页功能 -->
+                <div class="turn-page clear-float">
+                    <div class="page-btn iconfont icon-shangyiye
+                    " id="prev-btn"></div>
+                    <ul class="page clear-float" id="page">
+                         
+                    </ul>
+                    <div class="page-btn iconfont icon-xiayiye" id="next-btn"></div>
+                </div>
+            </div>
+            <div class="add-stu ">
+                <form class="add-form" id="add-form">
+                    <div class="item clear-float">
+                        <label for="name">姓名：</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="item clear-float">
+                        <label for="sNo">学号：</label>
+                        <input type="text" id="sNo">
+                    </div>
+                    <div class="item clear-float">
+                        <label for="birth">生日：</label>
+                        <input type="text" id="birth">
+                    </div>
+                    <div class="item clear-float">
+                        <label for="sex">性别：</label>
+                        <select id="sex">
+                            <option value="0">男</option>
+                            <option value="1">女</option>
+                        </select>
+                    </div>
+                    <div class="item clear-float">
+                        <label for="phone">电话：</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="item clear-float">
+                        <label for="address">地址：</label>
+                        <input type="text" id="address">
+                    </div>
+                    <div class="item clear-float">
+                        <label for="email">邮箱：</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="btns clear-float">
+                        <div class="add-btn" id="add-btn">添加</div>
+                        <input type="reset" value="重置" class="reset-btn">
+                    </div>
+                </form>
+            </div>
+            <div class="find-stu">查找学生区域</div>
+        </div>
+    </div>
+    <script src="../../tools/ajax.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

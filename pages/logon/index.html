@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>注册</title>
+</head>
+
+<body>
+    <!-- 三部分 -->
+    <!-- 背景图 -->
+    <div class="bg"></div>
+    <!-- logo区域 -->
+    <div class="logo">
+        <img src="../../assets/logo.png" alt="">
+    </div>
+    <!-- 文案区域 -->
+    <div class="text">
+        <h3>用前端</h3>
+        <div>让用户有更好的体验</div>
+    </div>
+
+    <!-- 注册区域 -->
+    <div class="logon-context">
+        <div class="logon-title">
+            <h3>欢迎注册</h3>
+            <div>
+                <span>已有账号?</span>
+                <a href="../login/login.html">登录</a>
+            </div>
+        </div>
+        <!-- 输入框 -->
+        <div class="logon-content">
+            <form id="logon-form">
+                <div class="clear-float">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username">
+                    <div class="prompt" id="prompt">设置后不可更改，中英文均可，最长14个英文或7个汉字</div>
+                    <div class="error-msg" id="error-msg"></div>
+                </div>
+                <div class="clear-float">
+                    <label for="account">账号:</label>
+                    <input type="text" id="account">
+                </div>
+                <div class="clear-float">
+                    <label for="pw">密码:</label>
+                    <input type="password" id="pw">
+                </div>
+                <div class="clear-float">
+                    <label for="repw">确认密码:</label>
+                    <input type="password" id="repw">
+                </div>
+                <input type="submit" value="注册" class="logon-btn">
+            </form>
+        </div>
+    </div>
+    <script src="../../tools/ajax.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
